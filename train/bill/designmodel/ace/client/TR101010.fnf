@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="gbk"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="general" class="nc.pubapp.pade.code.funnode.FunNodePara">
+        <property name="moduleName" value="train" />
+	    <property name="bpfPath" value="test.bpf"/>
+	    <property name="funcode" value="TR101010"/>
+	    <property name="clientPackName" value="nc.ui.train.bd.send"/>
+			    <property name="metaData" value="bill\METADATA\send.bmf"/>
+	    <property name="xmlPath" value="bill\src\client\nc\ui\train\bd/send\ace\view\Send_config.xml"/>
+	    <property name="metaDataType" value="singleType" />
+		<property name="funcregispath" value="bill/designmodel/funcmodel/send/funcregis/TR101010.func" />
+		<property name="quetempath" value="${quetempath}" />
+		<property name="printtempath" value="${printtempath}" />
+		<property name="systembasepath" value="bill/designmodel/systemplatebase/send/TR101010/TR101010.stb" />
+		<property name="extendSuffix" value=""/>
+		<property name="uif2ModelFilePath" value="bill\designmodel\ace\uif2model\TR101010.umf"/>
+		<property name="busiCompName" value="bill"/>
+		<property name="metaDataId" value="e57a528d-3fdb-448c-aecf-7cc9288de48e"/>
+	</bean>
+
+	<bean id="templet" class="nc.pubapp.pade.code.funnode.Templet">
+		<property name="tempStyle" value="1" />
+		<property name="nodeKey" value="" />
+		<property name="templetPath" value="bill/designmodel/templet/send/billtemplet/TR101010.btf" />
+	</bean>
+	
+	<bean id="FilePackNameBean" class="nc.pubapp.pade.code.engine.FilePackNamePara">
+		<property name="filePackNameList">
+			 <list>
+				  <value>nc.ui.train.bd.send.action.SendAddLineAction.java</value>
+				  <value>nc.ui.train.bd.send.handler.BodyAfterEditHandler.java</value>
+				  <value>nc.ui.train.bd.send.handler.BodyBeforeEditHandler.java</value>
+			 </list>
+		</property>
+	</bean>
+
+</beans>

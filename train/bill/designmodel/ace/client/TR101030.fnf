@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gbk"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="general" class="nc.pubapp.pade.code.funnode.FunNodePara">
+        <property name="moduleName" value="train" />
+	    <property name="bpfPath" value="test.bpf" />
+	    <property name="funcode" value="TR101030"/>
+	    <property name="funNodeName" value="bd.cust"/>
+	    <property name="clientPackName" value="nc.ui.train.bd.cust"/>
+			  		<property name="dbilldDate" value="Creationtime" />
+			    <property name="metaData" value="bill\METADATA\cust.bmf" />
+	    <property name="xmlPath" value="bill\src\client\nc\ui\train\bd/cust\ace\view\Cust_config.xml" />
+	    <property name="metaDataType" value="multiType" />
+	    <property name="funcregispath" value="bill/designmodel/funcmodel/cust/funcregis/TR101030.func" />
+	    <property name="quetempath" value="bill/designmodel/templet/cust/querytemplet/TR101030.qtf" />
+	    <property name="printtempath" value="bill/designmodel/templet/cust/outtemplet/TR101030.otf" />
+	    <property name="systembasepath" value="bill/designmodel/systemplatebase/cust/TR101030/TR101030.stb" />
+	    <property name="extendSuffix" value=""/>
+	    <property name="uif2ModelFilePath" value="bill\designmodel\ace\uif2model\TR101030.umf"/>
+	    <property name="busiCompName" value="bill"/>
+	    <property name="metaDataId" value="2ded9925-daa6-4d32-9040-4f7244d82c36"/>
+	</bean>
+	
+	<bean id="templet" class="nc.pubapp.pade.code.funnode.Templet">
+	    <property name="tempStyle" value="2" />
+	    <property name="nodeKey" value="" />
+		<property name="templetPath" value="bill/designmodel/templet/cust/billtemplet/TR101030.btf" />
+	</bean>
+
+	<bean id="BAEHpara" class="nc.pubapp.pade.code.funnode.BodyAfterEditHandlerPara">
+		<property name="itemList">
+			<list>
+							</list>
+		</property>
+	</bean>
+
+	<bean id="BBEHpara" class="nc.pubapp.pade.code.funnode.BodyBeforeEditHandlerPara">
+		<property name="itemList">
+			<list>
+							</list>
+		</property>
+	</bean>
+	
+	<bean id="HTBEHpara" class="nc.pubapp.pade.code.funnode.HeadTailBeforeEditHandlerPara">
+	</bean>
+	
+	<bean id="HTAEHpara" class="nc.pubapp.pade.code.funnode.HeadTailAfterEditHandlerPara">
+	</bean>
+	
+	<bean id="SerPropara" class="nc.pubapp.pade.code.funnode.ServiceProxyPara">
+				<property name="delete">
+			<bean class="nc.pubapp.pade.code.funnode.ServiceProxyItemPara">
+				<property name="fullClassName" value="nc.itf.train.ICustMaintain" />
+				<property name="itmClassName" value=".ICustMaintain" />
+				<property name="methodName" value="delete" />
+			</bean>
+		</property>
+				<property name="insert">
+			<bean class="nc.pubapp.pade.code.funnode.ServiceProxyItemPara">
+				<property name="fullClassName" value="nc.itf.train.ICustMaintain" />
+				<property name="itmClassName" value=".ICustMaintain" />
+				<property name="methodName" value="insert" />
+			</bean>
+		</property>
+				<property name="update">
+			<bean class="nc.pubapp.pade.code.funnode.ServiceProxyItemPara">
+				<property name="fullClassName" value="nc.itf.train.ICustMaintain" />
+				<property name="itmClassName" value=".ICustMaintain" />
+				<property name="methodName" value="update" />
+			</bean>
+		</property>
+					<property name="queryByQueryScheme">
+			<bean class="nc.pubapp.pade.code.funnode.ServiceProxyItemPara">
+				<property name="fullClassName" value="nc.itf.train.ICustMaintain" />
+				<property name="itmClassName" value=".ICustMaintain" />
+				<property name="methodName" value="query" />
+			</bean>
+		</property>
+				</bean>
+	
+	<bean id="FilePackNameBean" class="nc.pubapp.pade.code.engine.FilePackNamePara">
+    	<property name="filePackNameList">
+	    	<list>
+							       <value>nc.ui.train.bd.cust.ace.serviceproxy.AceCustDeleteProxy.java</value>
+			    			       <value>nc.ui.train.bd.cust.handler.OrgChangedHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceAddHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceBodyAfterEditHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceBodyBeforeEditHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceHeadTailAfterEditHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceHeadTailBeforeEditHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.handler.AceOrgChangedHandler.java</value>
+			       <value>nc.ui.train.bd.cust.ace.serviceproxy.AceCustMaintainProxy.java</value>
+			       <value>nc.ui.train.bd.cust.action.CustAddAction.java</value>
+			       <value>nc.ui.train.bd.cust.action.CustDeleteAction.java</value>
+			       <value>nc.ui.train.bd.cust.action.CustEditAction.java</value>
+			       <value>nc.ui.train.bd.cust.action.CopyActionProcessor.java</value>
+			     			       <value>nc.ui.train.bd.cust.query.CustQueryConditionInitializer.java</value>
+		     </list>
+	   </property>
+	</bean>
+
+</beans>

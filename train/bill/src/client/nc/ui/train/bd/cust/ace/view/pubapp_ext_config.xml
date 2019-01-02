@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- 插入按钮配置 -->
+<bean class="nc.ui.pubapp.plugin.action.InsertActionInfo">
+	<property name="actionContainer" ref="actionsOfList"/>		
+	<property name="actionType" value="notedit"/>
+	<property name="target" ref="addAction"/>	
+	<property name="pos" value="after"/>
+	<property name="action" ref="AddTestAction"/>
+</bean>
+<!-- 测试按钮 -->
+<bean id = "AddTestAction" class="nc.ui.train.bd.cust.action.AddTestAction">
+	<property name="model"><ref bean="bmModel"/></property>
+	<property name= "editor"><ref bean="billForm"/></property>
+	<property name= "code" value="addtest"/>
+</bean> 
+	
+<!-- 替换按钮配置 -->
+<bean class="nc.ui.pubapp.plugin.action.ReplaceActionInfo">
+	<property name="actionContainer" ref="actionsOfCard" />
+	<property name="actionType" value="notedit"/>
+	<property name="target" ref="defaultRefreshAction"/>
+	<property name="action" ref="ExtDocManageAction"/>
+</bean> 
+
+<!-- 附件管理 -->
+<bean id = "ExtDocManageAction" class ="nc.ui.train.bd.cust.action.ExtDocManageAction">
+	<property name="model"><ref local ="bmModel" /></property>
+	<property name= "code" value="addtest"/>
+</bean>
+</beans>

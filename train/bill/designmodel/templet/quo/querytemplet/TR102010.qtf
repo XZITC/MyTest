@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="gbk"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="queTemTotal" class="nc.pubapp.pade.templet.vo.QueryTempletTotal"><property name="conditions">
+<list><bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="0"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_quo_b"/>
+<property name="id" value="0001ZZ100000000026QO"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="1"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_quo"/>
+<property name="id" value="0001ZZ100000000026QP"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="集团"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="2"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_group"/>
+<property name="id" value="0001ZZ100000000026QQ"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="组织（包含全局）(所有)"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="3"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_org"/>
+<property name="id" value="0001ZZ100000000026QR"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="true"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="true"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="true"/>
+<property name="operaCode" value="=@"/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+<property name="value" value="#mainorg#"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="业务单元版本"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="4"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_org_v"/>
+<property name="id" value="0001ZZ100000000026QS"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="5"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vbillno"/>
+<property name="id" value="0001ZZ100000000026QT"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="3"/>
+<property name="dispSequence" value="6"/>
+<property name="dispType" value="0"/>
+<property name="fieldCode" value="dbilldate"/>
+<property name="id" value="0001ZZ100000000026QU"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="true"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="true"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="true"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+<property name="value" value="#day(0)#,#day(0)#"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="7"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vbillstatus"/>
+<property name="id" value="0001ZZ100000000026QV"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="8"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_billtypecode"/>
+<property name="id" value="0001ZZ100000000026QW"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="影响因素单据类型"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="9"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_billtype"/>
+<property name="id" value="0001ZZ100000000026QX"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="业务流程"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="10"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_busitype"/>
+<property name="id" value="0001ZZ100000000026QY"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="11"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vtrantypecode"/>
+<property name="id" value="0001ZZ100000000026QZ"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="12"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="ctrantypeid"/>
+<property name="id" value="0001ZZ100000000026R0"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="客户分类"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="13"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_custclass"/>
+<property name="id" value="0001ZZ100000000026R1"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="5"/>
+<property name="dispSequence" value="14"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_cust"/>
+<property name="id" value="0001ZZ100000000026R2"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="="/>
+<property name="operaName" value="等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="15"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_dept"/>
+<property name="id" value="0001ZZ100000000026R3"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="16"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="pk_dept_v"/>
+<property name="id" value="0001ZZ100000000026R4"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="8"/>
+<property name="dataType" value="2"/>
+<property name="dispSequence" value="17"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="ntotalnum"/>
+<property name="id" value="0001ZZ100000000026R5"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="8"/>
+<property name="dataType" value="2"/>
+<property name="dispSequence" value="18"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="ntoalmny"/>
+<property name="id" value="0001ZZ100000000026R6"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="19"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="creator"/>
+<property name="id" value="0001ZZ100000000026R7"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="8"/>
+<property name="dispSequence" value="20"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="creationtime"/>
+<property name="id" value="0001ZZ100000000026R8"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="true"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="21"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="modifier"/>
+<property name="id" value="0001ZZ100000000026R9"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="3"/>
+<property name="dispSequence" value="22"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="modifieditime"/>
+<property name="id" value="0001ZZ100000000026RA"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="true"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="23"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vapproveid"/>
+<property name="id" value="0001ZZ100000000026RB"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="8"/>
+<property name="dispSequence" value="24"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="tapprovietime"/>
+<property name="id" value="0001ZZ100000000026RC"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="true"/>
+<property name="operaCode" value="between@=@&gt;@&gt;=@&lt;@&lt;=@"/>
+<property name="operaName" value="介于@等于@大于@大于等于@小于@小于等于@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="25"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vapprovename"/>
+<property name="id" value="0001ZZ100000000026RD"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+<bean class="nc.pubapp.pade.templet.vo.QueryCondition"><property name="consultCode" value="-99"/>
+<property name="dataType" value="0"/>
+<property name="dispSequence" value="26"/>
+<property name="dispType" value="1"/>
+<property name="fieldCode" value="vmemo"/>
+<property name="id" value="0001ZZ100000000026RE"/>
+<property name="ifAutoCheck" value="true"/>
+<property name="ifDefault" value="false"/>
+<property name="ifGroup" value="false"/>
+<property name="ifImmobility" value="false"/>
+<property name="ifMust" value="false"/>
+<property name="ifOrder" value="false"/>
+<property name="ifSum" value="false"/>
+<property name="ifUsed" value="true"/>
+<property name="isAttrRefUsed" value="false"/>
+<property name="isCondition" value="true"/>
+<property name="isFromMetaData" value="true"/>
+<property name="isSubIncluded" value="false"/>
+<property name="isSysFuncRefUsed" value="false"/>
+<property name="operaCode" value="=@like@left like@right like@"/>
+<property name="operaName" value="等于@包含@左包含@右包含@"/>
+<property name="orderSequence" value="0"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="returnType" value="2"/>
+</bean>
+</list>
+</property>
+<property name="templet"><bean class="nc.pubapp.pade.templet.vo.QueryTemplet"><property name="id" value="0001ZZ100000000026QN"/>
+<property name="layer" value="0"/>
+<property name="metaclass" value="dc94f26b-7570-4925-ad52-d430ec5841ca"/>
+<property name="modelCode" value="TR102010"/>
+<property name="modelName" value="销售报价单"/>
+<property name="nodeCode" value="TR102010"/>
+<property name="pkCorp" value="@@@@"/>
+<property name="ts" value="2018-12-10 13:07:29"/>
+</bean>
+</property>
+
+</bean>
+
+</beans>

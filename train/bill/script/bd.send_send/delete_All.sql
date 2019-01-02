@@ -1,0 +1,10 @@
+DELETE FROM pub_systemplate_base where pk_systemplate = '0001ZZ10000000001L4D';
+delete from pub_billtemplet_b where pk_billtemplet = '0001ZZ10000000001L3R';
+delete from pub_billtemplet where pk_billtemplet = '0001ZZ10000000001L3R';
+DELETE FROM pub_billtemplet_t WHERE pk_billtemplet = '0001ZZ10000000001L3R';
+DELETE FROM sm_menuitemreg WHERE pk_menuitem = '0001ZZ10000000001L3Q';
+DELETE FROM sm_funcregister WHERE cfunid = '0001ZZ10000000001L3O';
+DELETE FROM sm_paramregister WHERE pk_param = '0001ZZ10000000001L3P';
+DELETE FROM sm_menuitemreg WHERE pk_menuitem = '0001ZZ10000000001L3N';
+DELETE FROM sm_funcregister WHERE cfunid = '0001ZZ10000000001L3L';
+DELETE FROM sm_paramregister WHERE pk_param = '0001ZZ10000000001L3M';
